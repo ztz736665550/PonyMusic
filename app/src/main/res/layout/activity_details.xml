@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context="com.example.ztz.ponymusic.view.activity.DetailsActivity">
+    <LinearLayout
+        android:id="@+id/details_linear"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/colorRed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_55">
+
+        <ImageView
+            android:id="@+id/details_img_back"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:src="@drawable/ic_action_back"
+            android:layout_width="@dimen/layout_30dp"
+            android:layout_height="@dimen/layout_30dp" />
+
+        <TextView
+            android:text="百度热歌榜"
+            android:textSize="18sp"
+            android:textColor="@color/colorBai"
+            android:layout_marginLeft="@dimen/layout_30dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/details_spring_view"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/details_linear"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/details_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </com.liaoinstan.springview.widget.SpringView>
+</RelativeLayout>

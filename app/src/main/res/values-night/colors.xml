@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorRed">#616161</color>
+    <color name="colorBai">#0f0</color>
+    <color name="colorhui">#616161</color>
+    <color name="colorshehui">#616161</color>
+    <color name="colorzong">#D3A26D</color>
+    <color name="colorhei">#D3A26D</color>
+    <color name="colorfff">#616161</color>
+    <color name="colorqianlv">#616161</color>
+</resources>

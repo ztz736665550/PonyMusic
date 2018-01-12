@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ztz.ponymusic.view.activity.Play_Details_Activity">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/play_page_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:background="@drawable/play_page_default_bg"
+        />
+    <RelativeLayout
+        android:id="@+id/rela_paly"
+        android:layout_above="@+id/paly_include"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/play_liner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_25dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/song_back"
+                android:layout_width="@dimen/layout_40dp"
+                android:layout_height="@dimen/layout_40dp"
+                android:layout_marginLeft="@dimen/layout_14dp"
+                android:layout_marginTop="@dimen/layout_10dp"
+                android:src="@drawable/ic_arrow_down"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_14dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_music_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="无音乐"
+                    android:textColor="@color/colorBai"
+                    android:textSize="@dimen/textsize_20sp"/>
+
+                <TextView
+                    android:id="@+id/name_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="歌手"
+                    android:textColor="@color/colorBai"
+                    android:textSize="@dimen/textsize_18sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_1dp"
+            android:background="@color/colorhui"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/play_liner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_350dp">
+
+            <org.sang.lrcview.LrcView
+                android:id="@+id/lrc_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:lrcMode="KARAOKE"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/paly_include"
+        layout="@layout/include_play_page_controller"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorhui"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/layout_3dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/pop_down"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/colorfff"
+            android:textColor="@color/colorzong"
+            android:text="下载"
+            android:layout_marginTop="@dimen/layout_3dp"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/pop_share"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/colorfff"
+            android:textColor="@color/colorzong"
+            android:text="分享"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/pop_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="取消"
+            android:layout_marginTop="@dimen/layout_3dp"
+            android:background="@color/colorfff"
+            android:textColor="@color/colorzong"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

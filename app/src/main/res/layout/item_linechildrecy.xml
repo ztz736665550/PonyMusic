@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_80dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/item_childimage"
+        android:layout_width="@dimen/layout_70dp"
+        android:layout_marginLeft="8dp"
+        android:layout_height="@dimen/layout_70dp"
+        android:layout_gravity="center"
+        android:src="@drawable/imageloading"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/layout_16dp"
+        android:layout_marginRight="@dimen/layout_16dp"
+        android:layout_height="@dimen/layout_70dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/item_childmusictext01"
+            android:textColor="@color/colorzong"
+            android:layout_width="match_parent"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="1、加载中"
+            android:layout_height="@dimen/layout_23dp"/>
+        <TextView
+            android:id="@+id/item_childmusictext02"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorzong"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="2、加载中"
+            android:layout_height="@dimen/layout_23dp"/>
+        <TextView
+            android:id="@+id/item_childmusictext03"
+            android:textColor="@color/colorzong"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="3、加载中"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_24dp"/>
+    </LinearLayout>
+
+</LinearLayout>
